@@ -2,7 +2,22 @@
 
 .logo {
     width: 96px;
-   margin-left: 10%;
+    vertical-align: middle;
+   margin-left: 5%;
+}
+.navbar  {
+    background-color: #353A40; 
+   
+}
+.navbar .navbar-nav  {
+    justify-content: space-between; 
+    width: 100%;
+   
+}
+.navbar .navbar-collapse {
+    align-items: end;
+    justify-content: space-around;
+    padding-left: 10%;
 }
 
 .navbar .nav-link {
@@ -15,17 +30,18 @@
 }
 
 .navbar .nav-link.tickets {
-    color:yellowgreen;
+    color:#28A745;
  }
  
  .navbar .nav-link.tickets:hover {
-     color: yellow;
+     color: yellowgreen;
      cursor: pointer;
 }
 
 .navbar .nav-text{
+
     color: white;
-    margin-left: -15%;
+ 
 }
 
 .navbar .nav-text:hover{
@@ -36,10 +52,5 @@
     border: 2px solid rgb(128, 124, 124) !important;
 }
     
-/* .navbar-toggler-icon{
-    background-image: rgb(128, 124, 124) !important;
-}
-#menuHamburguesa {
-    color: white;
-} */
+
 
