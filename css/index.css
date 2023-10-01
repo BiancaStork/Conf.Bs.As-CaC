@@ -3,22 +3,32 @@
     justify-content: flex-end;
     align-items: center;
     height: 800px;
-    /* position:relative; */
+   
 }
 .hero{
-    background: url("../img/ba1.jpg");
-    
-    background-size:cover;
+    background: url("../img/ba1.jpg");    
+    background-size:100vw;
     background-repeat: no-repeat;
-    position:relative;
-    
+    position:relative;  
+
+   }
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:rgba(0,0,0,0.5);
+
 }
 .hero-description {
-    position: relative;
+    position: relative;    
+    margin-top: 7%;
     color:white;
-    text-align: right;
-   
-    width: 100%;
+    text-align: right; 
+    width: 45%;
+    
 }
 
 .logo {
@@ -72,6 +82,9 @@
 .navbar-toggler {
     border: 2px solid rgb(128, 124, 124) !important;
 }
+.oradores{
+    text-align: center;
+  }
     
 
 
