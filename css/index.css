@@ -1,14 +1,21 @@
+.acerca-img{
+    background-size: cover;
+}
+.card-body {
+   align-items:start;
+}
+
  .container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 800px;
+    height: 100vh;
+   
    
 }
 .hero{
     background: url("../img/ba1.jpg");    
-    background-size:100vw;
-    background-repeat: no-repeat;
+    background-size:cover;
     position:relative;  
 
    }
@@ -20,11 +27,11 @@
     bottom: 0px;
     left: 0px;
     background-color:rgba(0,0,0,0.5);
-
+   
 }
 .hero-description {
     position: relative;    
-    margin-top: 7%;
+    margin-top: 23%;
     color:white;
     text-align: right; 
     width: 45%;
@@ -82,9 +89,12 @@
 .navbar-toggler {
     border: 2px solid rgb(128, 124, 124) !important;
 }
-.oradores{
-    text-align: center;
-  }
+
+.row.card-container {
+    display:flex;
+    justify-content:space-evenly;
+    margin-left: 3%;
+ }
     
 
 
