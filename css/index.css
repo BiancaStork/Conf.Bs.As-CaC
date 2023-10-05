@@ -1,6 +1,12 @@
 .acerca-img{
     background-size: cover;
 }
+.btn.btn-form{
+    width: 100%; 
+    margin-bottom: 2%;
+    background-color: yellowgreen; 
+    color: white
+}
 .card-body {
    align-items:start;
 }
@@ -13,6 +19,7 @@
    
    
 }
+
 .hero{
     background: url("../img/ba1.jpg");    
     background-size:cover;

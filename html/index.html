@@ -54,8 +54,8 @@
            <p>
             Bs As llega por primera vez a Argentina. Un Evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
           </p>
-          <button type="button" class="btn btn-outline-light">Quiero ser orador </button>
-          <button type="button" class="btn btn-success">Comprar Tickets</button>
+          <button type="button" class="btn btn-outline-light" onclick="location.href='#formulario'">Quiero ser orador </button>
+          <button  type="button" class="btn btn-success">Comprar Tickets</button>
         </div>
         </div>
       </section>
@@ -100,12 +100,12 @@
       </div>
      </section>
      <section class="mt-5" id="acerca">
-       <div class="card bg-dark text-white mb-3">
+       <div class="card bg-dark text-white mb-3 border-0 rounded-0">
           <div class="row g-0">
             <div class="col-md-6">
               <img
                 src="../img/honolulu.jpg"
-                class="img-fluid rounded-start"
+                class="img-fluid"
                 alt="Honolulu"
               />
             </div>
@@ -127,8 +127,47 @@
           </div>
         </div>    
      </section>
-     <section id="formulario">
-      <div>formulario</div>
+     <section id="formulario" class="container-fluid"> 
+      <div class="row justify-content-center">    <!--centra horizontalmente el formulario-->
+      <div class="col-md-6"> <!--limitar el ancho del formulario a 6 columnas-->
+      <p class="text-center mt-3 mb-0">CONVIÉRTETE EN UN</p>
+      <h3 class="text-center mt-0">ORADOR</h3>
+      <p class="text-center mt-3 mb-0">Anótate como orador para dar una <u>charla ignite</u>. Cuéntanos de que quieres hablar!</p>
+      <!--Formulario-->
+      <form>
+        <div class="row mb-3 mt-2">
+          <div class="col">
+            <input type="text" 
+            class="form-control" 
+            placeholder="Nombre" 
+            aria-label="Nombre" 
+            />
+          </div>
+          <div class="col">
+            <input type="text" 
+            class="form-control" 
+            placeholder="Apellido" 
+            aria-label="Apellido" 
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+              <textarea
+                class="form-control"
+                placeholder="Sobre qué quieres hablar?"
+                aria-label="Sobre qué quieres hablar?"
+                rows="5"
+              ></textarea>
+              <span>Recuerda incluir un titulo para tu charla.</span>
+            </div>
+          </div>
+        <button type="submit"
+               class="btn btn-form"
+               >Enviar</button>
+      </form>
+    </div>
+  </div>
      </section>     
      
     </main>
