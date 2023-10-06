@@ -37,14 +37,14 @@ footer .navbar-nav{
     text-align: center;
 }
 
-.footer-text{
+/* .footer-text{
     color: white !important;
 }
 
 .footer-text:hover {
     color: rgb(128, 124, 124) !important;
     cursor: pointer;
-}
+} */
 
 .hero{
     background: url("../img/ba1.jpg");  
@@ -115,7 +115,6 @@ footer .navbar-nav{
 }
 
 .navbar .nav-text{
-
     color: white;
  
 }
