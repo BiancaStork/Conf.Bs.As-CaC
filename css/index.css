@@ -1,3 +1,4 @@
+
 .acerca-img{
     background-size: cover;
 }
@@ -15,13 +16,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100vh;
+    height: 50vh;  
    
+}
+.footer {
    
+    background-color: #1E5170;
+    color: white;
+
 }
 
 .hero{
-    background: url("../img/ba1.jpg");    
+    background: url("../img/ba1.jpg");  
     background-size:cover;
     position:relative;  
 
