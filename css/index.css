@@ -16,20 +16,41 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 50vh;  
+    height: 700px; 
+    width: 100%;
+    
    
 }
-.footer {
-   
-    background-color: #1E5170;
-    color: white;
 
+
+.footer {   
+    background-color: #1E5170;
+   
+}
+
+footer .navbar-nav{
+    margin-left: 15vw;
+    width: 15px;
+    display: flex;    
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.footer-text{
+    color: white !important;
+}
+
+.footer-text:hover {
+    color: rgb(128, 124, 124) !important;
+    cursor: pointer;
 }
 
 .hero{
     background: url("../img/ba1.jpg");  
     background-size:cover;
-    position:relative;  
+    position:relative; 
+  
 
    }
 .hero::before{
@@ -44,12 +65,13 @@
 }
 .hero-description {
     position: relative;    
-    margin-top: 23%;
+    margin-top: 18%;
     color:white;
     text-align: right; 
     width: 45%;
     
 }
+
 
 .logo {
     width: 96px;
@@ -73,6 +95,9 @@
 
 .navbar .nav-link {
    color:rgb(128, 124, 124);
+ 
+
+
 }
 
 .navbar .nav-link:hover {
