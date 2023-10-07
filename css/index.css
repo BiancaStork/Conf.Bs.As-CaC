@@ -17,10 +17,10 @@
     justify-content: flex-end;
     align-items: center;
     height: 700px; 
-    width: 100%;
-    
+    width: 100%;   
    
 }
+
 
 
 .footer-bg {   
@@ -35,7 +35,7 @@
    text-decoration: none;
 }
 
-footer .navbar-nav{
+.footer-menu{
     margin-left: 15vw;
     width: 15px;
     display: flex;    
