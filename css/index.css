@@ -79,6 +79,9 @@ footer .navbar-nav{
    margin-left: 5%;
 }
 .navbar  {
+    width: 100%;
+    position: fixed;
+     z-index: 300;
     background-color: #353A40; 
    
 }
@@ -123,9 +126,7 @@ footer .navbar-nav{
     color:yellow;
     cursor: pointer;
 }
-.navbar-toggler {
-    border: 2px solid rgb(128, 124, 124) !important;
-}
+
 
 .row.card-container {
     display:flex;
