@@ -37,15 +37,6 @@ footer .navbar-nav{
     text-align: center;
 }
 
-/* .footer-text{
-    color: white !important;
-}
-
-.footer-text:hover {
-    color: rgb(128, 124, 124) !important;
-    cursor: pointer;
-} */
-
 .hero{
     background: url("../img/ba1.jpg");  
     background-size:cover;
@@ -79,9 +70,7 @@ footer .navbar-nav{
    margin-left: 5%;
 }
 .navbar  {
-    width: 100%;
-    position: fixed;
-     z-index: 300;
+    
     background-color: #353A40; 
    
 }
