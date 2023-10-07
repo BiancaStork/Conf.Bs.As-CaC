@@ -23,9 +23,16 @@
 }
 
 
-.footer {   
-    background-color: #1E5170;
-   
+.footer-bg {   
+    display: flex;
+    justify-content: center;  
+    background-color: #1E5170;   
+      
+}
+
+.footer-bg a{
+   color: white;
+   text-decoration: none;
 }
 
 footer .navbar-nav{
@@ -69,16 +76,17 @@ footer .navbar-nav{
     vertical-align: middle;
    margin-left: 5%;
 }
-.navbar  {
-    
-    background-color: #353A40; 
-   
+
+.navbar  {    
+    background-color: #353A40;    
 }
+
 .navbar .navbar-nav  {
     justify-content: space-between; 
     /* width: 100%; */
    
 }
+
 .navbar .navbar-collapse {
     align-items: end;
     justify-content: space-around;
