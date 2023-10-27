@@ -30,8 +30,8 @@
    
 }
 .descuentos {
-    /* display: flex;
-    justify-content: center; */
+ display: flex;
+    justify-content: center; 
     margin-top: 15%;
     margin-bottom: 1%;
 }
