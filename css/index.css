@@ -10,7 +10,7 @@
 }
 .btn.btn-vta{
     width: 35%;
-    margin-bottom: 2%;
+    margin-bottom:8%;
     margin-left: 5%;
     margin-right: 5%;
     background-color: yellowgreen; 
@@ -32,7 +32,7 @@
 .descuentos {
  display: flex;
     justify-content: center; 
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 1%;
 }
 
