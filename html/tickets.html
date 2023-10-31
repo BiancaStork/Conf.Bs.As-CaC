@@ -79,6 +79,7 @@
          <div class="row mb-3 mt-2">
           <div class="col">
             <input type="text" 
+            id="nombre"
             class="form-control" 
             placeholder="Nombre" 
             aria-label="Nombre" 
@@ -86,6 +87,7 @@
           </div>
           <div class="col">
             <input type="text" 
+            id="apellido"
             class="form-control" 
             placeholder="Apellido" 
             aria-label="Apellido" 
@@ -95,6 +97,7 @@
          <div class="row mb-3">
             <div class="col">
               <input
+              id="correo"
                 class="form-control"
                 placeholder="Correo"
                 aria-label="Correo"
@@ -105,32 +108,34 @@
             <div class="col">
               <label>Cantidad</label>
               <input type="text" 
+              id="cantidad"
               class="form-control" 
               placeholder="cantidad" 
-              aria-label="Cantidad" 
+              aria-label="Cantidad"              
               />
             </div>
             <div class="col">
               <label>Categoria</label>
-              <select class="form-select" aria-label="Default select example">
-                <option value="1">Estudiante</option>
-                <option value="2">Trainee</option>
-                <option value="3">Junior</option>
+              <select  id="categoria" class="form-select" >
+                <option selected value="estudiante">Estudiante</option>
+                <option  value="trainee">Trainee</option>
+                <option  value="junior">Junior</option>
               </select>
             </div>
            </div>
            <div class="row mb-3">
             <div class="col">
-              <input
-                class="form-control"
-                placeholder="Total a Pagar: $"
-                aria-label="Total"
-              />
+             <div id="totalCompra" class="alert alert-primary" role="alert">
+                Total A Pagar $
+              </div>
+
              </div>
           </div>
           <div class="row mb-3 mt-2">
-            <button type="submit" class="btn btn-vta">Borrar</button>
-            <button type="submit" class="btn btn-vta">Resumen</button>
+            <button  id="btnBorrar" type="reset" onclick="borrar()" class="btn btn-vta">Borrar</button>
+            <button  id="btnResumen" type="button" onclick="calcular()" class="btn btn-vta" >
+              Resumen
+            </button>
           </div>
          
     </div>
