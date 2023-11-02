@@ -1,6 +1,6 @@
 # TRABAJO PRACTICO INTEGRADOR FRONT #
 # Codo a Codo @2023 #
-#PRIMERA PARTE
+# PRIMERA PARTE #
 Se trata de replicar una pagina web en particular, utilizando HTML y Boostrap para los estilos
 javascript para calcular Total a Pagar al comprar Tickets
 </br>
