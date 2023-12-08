@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oradores Conf Bs.As. - CaC</title>
+</head>
+<body>
+    <form>
+        <input id="nombre">
+        <input id="apellido">
+        <input id="mail">
+        <input id="tema">
+        <button id="btnGrabar" type="button">GRABAR</button>
+    </form>
+    <script>
+        const nuevoOrador=()=>{
+            const nombre = document.getElementById('nombre').value;
+            const apellido = document.getElementById('apellido').value;
+            const mail = document.getElementById('mail').value;
+            const tema = document.getElementById('tema').value;
+        
+        const orador ={
+            nombre,
+            apellido,
+            mail,
+            tema
+        };
+        //post al servidor
+         //1 api fetch --preparo la peticion
+    const respuesta = fetch('http://localhost:8080/web-app-/api/orador/nuevo', {
+        method:'POST',
+        body: JSON.stringify(orador)
+
+    });
+    //2 intento resolver la promesa
+    respuesta
+     .then(response =>response.json())
+     .then(respuesta =>{
+        //actualizar el div del html con la informacion que me trae data
+       console.log(respuesta)
+     }) 
+     .catch(error => console.log(error)) 
+      }      
+        document.getElementById('btnGrabar').addEventListener('click', nuevoOrador);
+    </script>
+</body>
+</html>
