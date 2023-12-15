@@ -48,11 +48,13 @@
       let oradores = [];
       const setOradores=(nuevosOradores)=>{
         oradores=nuevosOradores;
-        //alert(JSON.stringify(oradores));
+        
       }
       const setId=(id)=>{
         oradorId = id;
-        alert("ESTAS POR EDITAR EL ORADOR CON ID:" +oradorId)
+        //alert("ESTAS POR EDITAR EL ORADOR CON ID:" +oradorId)
+        const orador = oradores.find(o=>o.id===id)
+        alert(JSON.stringify(orador));
       }
       const eliminarOrador = (id) => {
             if(!confirm('ESTAS POR ELIMINAR EL ORADOR, ESTAS SEGURO?')) {
