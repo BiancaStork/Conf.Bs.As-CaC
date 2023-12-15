@@ -44,6 +44,16 @@
 
 
     <script>
+      let oradorId;
+      let oradores = [];
+      const setOradores=(nuevosOradores)=>{
+        oradores=nuevosOradores;
+        //alert(JSON.stringify(oradores));
+      }
+      const setId=(id)=>{
+        oradorId = id;
+        alert("ESTAS POR EDITAR EL ORADOR CON ID:" +oradorId)
+      }
       const eliminarOrador = (id) => {
             if(!confirm('ESTAS POR ELIMINAR EL ORADOR, ESTAS SEGURO?')) {
                 return;
@@ -98,7 +108,8 @@
     respuesta
      .then(response =>response.json())
      .then(oradores =>{
-        //actualizar el div del html con la informacion que me trae data
+      setOradores(oradores);  
+      //actualizar el div del html con la informacion que me trae data
         //console.log(oradores)
        dibujarTabla(oradores)
      }) 
@@ -124,7 +135,7 @@ function dibujarFilas(oradores){
         <td>${orador.apellido}</td>
         <td>${orador.tema}</td>
         <td>
-           <button>Editar</button>
+           <button onClick="setId(${orador.id})">Editar</button>
           <button onclick="eliminarOrador(${orador.id})">
             Eliminar
           </button>
