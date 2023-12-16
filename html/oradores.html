@@ -31,7 +31,8 @@
                        <th scope="col">ID</th>
                       <th scope="col">Nombre</th>
                      <th scope="col">Apellido</th>
-                       <th scope="col">Tema</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Tema</th>
                     
                      </tr>
                   </thead>
@@ -46,15 +47,21 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Orador</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <form>
+          <input id="nombreActualizar">
+          <input id="apellidoActualizar">
+           <input id="mailActualizar">
+           <input id="temaActualizar">
+         
+      </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button id='btnCerrar'type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" onclick="actualizarOrador()">Actualizar Orador</button>
       </div>
     </div>
   </div>

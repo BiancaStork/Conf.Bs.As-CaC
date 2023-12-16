@@ -1,15 +1,25 @@
 let oradorId;
 let oradores = [];
-const setOradores=(nuevosOradores)=>{
-  oradores=nuevosOradores;
-  
-}
+let oradorActual;
+
 const setId=(id)=>{
   oradorId = id;
-  //alert("ESTAS POR EDITAR EL ORADOR CON ID:" +oradorId)
   const orador = oradores.find(o=>o.id===id)
-  alert(JSON.stringify(orador));
+  oradorActual=orador;
+
+  document.getElementById('nombreActualizar').value = oradorActual.nombre;
+  document.getElementById('apellidoActualizar').value=oradorActual.apellido;
+  document.getElementById('mailActualizar').value = oradorActual.mail;
+  document.getElementById('temaActualizar').value = oradorActual.tema;
 }
+
+const setOradores=(nuevosOradores)=>{
+    oradores=nuevosOradores;
+    
+  }
+
+
+
 const eliminarOrador = (id) => {
       if(!confirm('ESTAS POR ELIMINAR EL ORADOR, ESTAS SEGURO?')) {
           return;
@@ -21,7 +31,7 @@ const eliminarOrador = (id) => {
       .then(response => response) 
       .then(respuesta => {
           alert(`se ha eliminado el orador id: ${id}`);
-          getOradores;
+          getOradores();
       })
       .catch(err => console.log(err));
   }
@@ -52,7 +62,8 @@ respuesta
   //actualizar el div del html con la informacion que me trae data
  // system.out.println(respuesta)
  alert(`Has dado de alta al orador con id${respuesta.id}`)
- console.log(respuesta)
+ getOradores();
+ //console.log(respuesta)
 }) 
 .catch(error => console.log(error)) 
 } 
@@ -89,7 +100,9 @@ for(let orador of oradores){
   
   <td>${orador.nombre}</td>
   <td>${orador.apellido}</td>
+  <td>${orador.mail}</td>
   <td>${orador.tema}</td>
+
   <td>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="setId(${orador.id})">
   Editar
@@ -104,6 +117,45 @@ for(let orador of oradores){
 return rows
 
 }  
+
+const actualizarOrador=()=>{
+    if(!oradorActual){
+        return;
+    }
+    const nombre = document.getElementById('nombreActualizar').value;
+    const apellido= document.getElementById('apellidoActualizar').value;
+    const mail = document.getElementById('mailActualizar').value;
+    const tema= document.getElementById('temaActualizar').value;
+    //alert("Actualizar Orador");
+    const orador ={
+      
+        nombre,
+        apellido,
+        mail,
+        tema
+    };
+     //post al servidor
+       //1 api fetch --preparo la peticion
+       console.log(oradorActual.id)
+       const respuesta = fetch(`http://localhost:8080/web-app-/api/orador?id=${oradorActual.id}`, {
+        method:'PUT',
+        body: JSON.stringify(orador)
+      
+      });
+      //2 intento resolver la promesa
+      respuesta
+      .then(response =>response)
+      .then(respuesta =>{
+        //actualizar el div del html con la informacion que me trae data
+       alert(`Has Modificado el orador con id${oradorActual.id}`)
+       console.log(respuesta)
+       //cerrar modal
+       document.getElementById('btnCerrar').click();
+       getOradores();
+      }) 
+      .catch(error => console.log(error)) 
+    
+    }
 
   document.getElementById('btnListado').addEventListener('click', getOradores);
   document.getElementById('btnGrabar').addEventListener('click', nuevoOrador);
