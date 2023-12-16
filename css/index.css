@@ -146,6 +146,10 @@
     cursor: pointer;
 }
 
+.oradores-background {
+    background-color: #CEFBD2;
+}
+
 
 .row.card-container {
     display:flex;

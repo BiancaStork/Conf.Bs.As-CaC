@@ -104,10 +104,10 @@ for(let orador of oradores){
   <td>${orador.tema}</td>
 
   <td>
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="setId(${orador.id})">
+  <button type="button"  class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="setId(${orador.id})">
   Editar
   </button>  
-  <button onclick="eliminarOrador(${orador.id})">
+  <button  class="btn btn-outline-danger" onclick="eliminarOrador(${orador.id})">
       Eliminar
   </button>
   </td>
@@ -157,5 +157,6 @@ const actualizarOrador=()=>{
     
     }
 
-  document.getElementById('btnListado').addEventListener('click', getOradores);
+  //document.getElementById('btnListado').addEventListener('click', getOradores);
+  getOradores();
   document.getElementById('btnGrabar').addEventListener('click', nuevoOrador);
