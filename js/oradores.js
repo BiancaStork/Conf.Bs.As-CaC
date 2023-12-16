@@ -62,11 +62,13 @@ respuesta
   //actualizar el div del html con la informacion que me trae data
  // system.out.println(respuesta)
  alert(`Has dado de alta al orador con id${respuesta.id}`)
+ document.getElementById('formOradores').reset();
  getOradores();
  //console.log(respuesta)
 }) 
 .catch(error => console.log(error)) 
 } 
+
 const getOradores = () => {
  //alert('funciona');
 //1 api fetch --preparo la peticion
