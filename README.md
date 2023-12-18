@@ -14,7 +14,12 @@ Se agrega Funcionalidad al boton 'Comprar Tickets'
   Estudiante - descuento 80%, 
   Trainee - descuento 50% y
   Junior - descuento 15%
+<br>
 
-#PARTICIPANTES:
+# TERCERA PARTE - INTEGRAR BASE DE DATOS Y JAVA #
+
+Se integra El BACKEND con la conexion a la BD y los metodos para manejar el CRUD completo de Oradores
+
+# GRUPO 5 - PARTICIPANTES:
 Milagros Gomez Pizarro - Gimena Moreno - Yanina Gonzalez - Nahuel Olea - Bianca Stork
 
