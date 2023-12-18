@@ -20,6 +20,7 @@ Se agrega Funcionalidad al boton 'Comprar Tickets'
 
 Se integra El BACKEND con la conexion a la BD y los metodos para manejar el CRUD completo de Oradores
 
-# GRUPO 5 - PARTICIPANTES:
+# GRUPO 5:
+PARTICIPANTES
 Milagros Gomez Pizarro - Gimena Moreno - Yanina Gonzalez - Nahuel Olea - Bianca Stork
 
